@@ -6,7 +6,8 @@ from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 import os
 # Set your OpenAI API key
-os.environ["OPENAI_API_KEY"] = "your-api-key-here"
+from dotenv import load_dotenv
+load_dotenv()
 def run_rag():
    # Load PDF
    loader = PyPDFLoader("sample.pdf")
