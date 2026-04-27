@@ -3,3 +3,4 @@ openai
 faiss-cpu
 tiktoken
 pypdf
+python-dontev
